@@ -1,6 +1,6 @@
 # Jouleverse Mainnet 节点搭建指南
 
-Author | 教链([evan.j](https://jscan.jnsdao.com/#/jns/evan.j))
+Author | Evan([evan.j](https://jscan.jnsdao.com/#/jns/evan.j)); Astudysunny
 -|-
 Reviewer | ~
 
@@ -411,6 +411,14 @@ sudo docker exec jouleverse-mainnet /j/geth --exec 'admin.nodeInfo' attach /data
 撤销踢人（反悔）：
 ```
 > clique.discard('替换为待批准节点的签块地址0x...')
+```
+
+#### 查看投票情况
+
+节点控制台执行：
+
+```
+> clique.getSnapshot()
 ```
 
 ## 版本
